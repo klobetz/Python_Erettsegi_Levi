@@ -89,6 +89,10 @@ print(o)    #hatványozás
 o=c%d
 print(o)    #osztás maradéka
 
+print()
+print(13%7)                 #Nem mindig 0 vagy 1 a visszartérési érték a maradék számításnál!!!!
+                            #itt pl:6
+
 # a zárójelekkel módosítható ez eredmény kiértékelése!!!!
 # n=5
 # n= 3*n+1 eredmény 16
