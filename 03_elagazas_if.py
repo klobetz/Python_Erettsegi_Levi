@@ -77,3 +77,11 @@ else:
         print(f'A megadott szám {valasz3} ami se nem pozitív se nem negatív')
 
 #házi és ellenőrzés
+tiznelnagyobb = int(input('Kérek egy egész számot:'))
+
+if tiznelnagyobb > 0 and tiznelnagyobb < 10:
+    print('A szám 0-a és 10 közé esik')
+else:
+    print('A szám 10-nél nagyobb')
+
+
