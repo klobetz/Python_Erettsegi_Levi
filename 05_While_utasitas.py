@@ -22,7 +22,7 @@
 
 #középen tesztelős ciklus:
 osszeg3 = 0
-while True:         # a True azt jelenti hogy igaz azaz újra és újra kérje be
+while True:         #a True azt jelenti hogy igaz azaz újra és újra kérje be
     bemenet = input('Kérek egy számot: ')
     if bemenet == '':
         break
