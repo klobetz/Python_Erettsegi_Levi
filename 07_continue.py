@@ -17,3 +17,5 @@ for i in lista:
     if i % 2 ==1:
         continue
     print(i, end=' ')
+print()
+print(lista[5])
