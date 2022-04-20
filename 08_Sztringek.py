@@ -57,23 +57,36 @@ else:
 
 # kérjünk be a felhasználótól egy karaktert és ellenőrizzük le, hogy szerepel-e a szederfa szóban vagy sem
 #ha szerepel akkor írassuk kihogy hányadik helyen szerepel az adott karakter
-valasz = input("Kérek egy karaktert: ")
+valasz2 = input("Kérek egy karaktert: ")
 
-if valasz in gyumolcs:                  #megvizsgálom hogy van e benne
+if valasz2 in gyumolcs:                  #megvizsgálom hogy van e benne
     print("Igen szerepel benne")
     hanyadik = 0
     for i in gyumolcs:                  #ha van benne akkor megnézem hogy hányadik
-        if valasz==i:
+        if valasz2==i:
             print(f"az adott karakter a {hanyadik+1} pozíción szerepel")
             #break      #ez csak akkor kell ha csak az első találatig akarok menni
         hanyadik+=1
 else:
-    print(f"Nem nem szerepel benne a {valasz}")
+    print(f"Nem nem szerepel benne a {valasz2}")
 
 
 #házi ugyanez while-al
+valasz2 = input("Kérek egy karaktert: ")
 
-#beépített metódus használata
+if valasz2 in gyumolcs:
+    print("Igen szerepel benne")
+    hanyadik = 0
+    while hanyadik < len(gyumolcs):
+        if gyumolcs[hanyadik] == valasz2:
+            print(f"az adott karakter a {hanyadik+1} pozíción szerepel")
+            #break      #ez csak akkor kell ha csak az első találatig akarok menni
+        hanyadik+=1
+else:
+    print(f"Nem nem szerepel benne a {valasz2}")
+
+
+#beépített metódus használata /find/
 print(gyumolcs.find('k'))           # ha nincs benne akkor -1 -el tér vissza
 print(gyumolcs.find('e')+1)         # ha van benne akkor kiírja az indexét és ehez hozzáadunk egyet és így pozíciót kapok
 
