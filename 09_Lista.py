@@ -77,8 +77,80 @@ print(szoveg)
 szoveg.append("valami")
 print(szoveg)
 
+print("!"*50)
+# objektumok és hivatkozások
+#sztring esetében: ugyan arra az objektumra mutat az alábbi módon bizonyítjuk
+a = "valami"
+b = "valami"
+print(a==b)
+print(a in b)
 
+print("!"*50)
+#viszont a lista esetben külön objektumra mutata!!! az alábbi módon bizonyítjuk
+list1 = [1,2,3,4,]
+list2 = [1,2,3,4,]
 
+print(list1==list2)
+print(list1 in list2)
 
+print("!"*50)
 
+#lista klónozása
+a = ["egy","kettő"]
+b = a[:]
 
+print(b)
+
+a.append("három")
+
+print(a)
+print(b)
+
+# lista és a for ciklus használata
+#készítünk egy listát majd az elemeket szorozzuk meg 2-vel és írassuk ki őket az elemmel együtt!
+print("%"*50)
+szorzat = [1,2,3,4,5,6]
+
+for i in szorzat:
+    print(f"az eredeti szám: {i} => {i*2}")
+
+for (i, erek) in enumerate(szorzat):
+    print(f"a sorozat indexe: {i} az adott indexen az eredeti érték: {erek} aminek a kétszerese: {erek*2}")
+
+#ugyanez szöveggel:
+print("-"*50)
+szöveg = ["szöveg","kutya", "virág", "alma"]
+for (i, erek) in enumerate(szöveg):
+    print(i,erek)
+
+print("-"*50)
+# lista mtódusok
+mlista = []
+mlista.append(85)           #elem hozzáfűzése (mindig az utoldó pozícióra)
+mlista.append(65)
+mlista.append(4)
+mlista.append(418)
+mlista.append(12)
+print(mlista)
+
+mlista.insert(2,45)         #elem beszúrása az adott potícióra
+print(mlista)
+
+print("-"*50)
+sorbarendezve = sorted(mlista)
+print(sorbarendezve)        #növekvő sorrend az eredeit lista nem módosul!!!!
+print(mlista)
+
+print(sorted(mlista))
+print(mlista)
+print("-"*50)
+
+#lista megfordítása az eredeti lista nem változik
+print(sorted(mlista, reverse=True))
+print("-"*50)
+
+mlista.reverse()            #elemek megfordítása de az eredeti lista módosul!!!!!!!!
+print(mlista)
+
+mlista.sort()               #sorba rendez de az eredeti lista módosul!!!!!!!!
+print(mlista)
