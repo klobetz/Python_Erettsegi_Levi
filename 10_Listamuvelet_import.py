@@ -22,6 +22,6 @@ for elemek in lista:
     print(elemek, end=", ")
 
 #házi gyakorlás sorbarendezés és fordítva az eeredeti lista nem módosul
-# csak a páros számok kiíratása => listáb atétel az elemeknek
-#csak a pártlanok kiíratása => listáb atétel az elemeknek
+# csak a páros számok kiíratása => listába tétel az elemeknek
+#csak a pártlanok kiíratása => listába tétel az elemeknek
 #fibonacci!!!!!!!!
