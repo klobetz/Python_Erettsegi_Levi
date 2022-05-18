@@ -16,3 +16,4 @@ with open("TXT_allomanyok/autok.txt", encoding="utf8") as f:
 print(list)
 for elem in list:
     print(elem[0])
+
