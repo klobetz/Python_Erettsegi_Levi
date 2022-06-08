@@ -16,14 +16,3 @@ with open("TXT_allomanyok/autok.txt", encoding="utf8") as f:
 # print(list)
 # for elem in list:
 #     print(elem[0])
-
-nevek = []
-with open("TXT_allomanyok/nevek.txt",encoding="utf8") as f:
-    fejlec = f.readline()
-    for adat in f:
-        sor = adat.strip().split()
-        vnev = sor[0]
-        knev = sor[1]
-
-
-
