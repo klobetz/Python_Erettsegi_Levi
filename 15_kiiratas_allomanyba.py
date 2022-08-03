@@ -43,7 +43,13 @@ print("-"*50)
 #csak az elemek kiírása fájlba
 kiiratas = ""
 for elem in lista:
-    kiiratas += f"{str(elem)} "
+    kiiratas += f"{elem} "
 
 with open("Kiiratasok/lista_elemek.txt", "w", encoding="utf8") as f:
     f.writelines(kiiratas)
+
+
+#egy lépésben
+with open("Kiiratasok/lista_elemek2.txt", "w", encoding="utf8") as f:
+    for elem in lista:
+        f.writelines(f"{elem} ")
