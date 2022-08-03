@@ -37,3 +37,13 @@ for elem in sorted(lista):
 #írjuk ki a listát egy fájlba
 with open("Kiiratasok/lista.txt", "w", encoding="utf8") as f:
     f.writelines(str(lista))
+
+print()
+print("-"*50)
+#csak az elemek kiírása fájlba
+kiiratas = ""
+for elem in lista:
+    kiiratas += f"{str(elem)} "
+
+with open("Kiiratasok/lista_elemek.txt", "w", encoding="utf8") as f:
+    f.writelines(kiiratas)
