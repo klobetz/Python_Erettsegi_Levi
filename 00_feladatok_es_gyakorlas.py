@@ -41,27 +41,38 @@
 #
 #
 #fibonacci
-valasz = int(input("kérek egy számot: "))
+# valasz = int(input("kérek egy számot: "))
+#
+# elsoelem = 0
+# masodikelem = 1
+# harmadikelem = 0
+# fibonacci = [0, 1]
+# for elem in range(valasz):
+#     harmadikelem = elsoelem+masodikelem
+#     fibonacci.append(harmadikelem)
+#     elsoelem = masodikelem
+#     masodikelem = harmadikelem
+#
+# print(fibonacci)
+#
+# #vagy
+#
+# valasz = int(input("kérek egy számot: "))
+#
+# fibonacci2 = [0, 1]
+# for elem in range(valasz):
+#     harmadikelem2 = fibonacci2[0+elem]+fibonacci2[1+elem]
+#     fibonacci2.append(harmadikelem2)
+# print(fibonacci2)
 
-elsoelem = 0
-masodikelem = 1
-harmadikelem = 0
-fibonacci = [0, 1]
-for elem in range(valasz):
-    harmadikelem = elsoelem+masodikelem
-    fibonacci.append(harmadikelem)
-    elsoelem = masodikelem
-    masodikelem = harmadikelem
-
-print(fibonacci)
-
-#vagy
-
-valasz = int(input("kérek egy számot: "))
-
-fibonacci2 = [0, 1]
-for elem in range(valasz):
-    harmadikelem2 = fibonacci2[0+elem]+fibonacci2[1+elem]
-    fibonacci2.append(harmadikelem2)
-print(fibonacci2)
-
+lista1 = [1,2,3,4,5]
+lista2 = [4,5,6,7,8,9]
+#lista = set(lista1) & set(lista2)
+print(lista1)
+print(lista2)
+print(set(lista1) | set(lista2))
+print(set(lista1) ^ set(lista2))
+print(set(lista1) & set(lista2))
+print(set(lista1) - set(lista2))
+print(sorted(set(lista2) - set(lista1)))
+#print(set(lista1))
